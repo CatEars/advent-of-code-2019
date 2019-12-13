@@ -11,7 +11,7 @@ namespace _3
     {
         private const string REAL_INPUT = "./in.real";
         private const string TEST_INPUT = "./in.tst";
-        private const string TEST_INPUT2 = "./in.tst";
+        private const string TEST_INPUT2 = "./in.tst2";
 
         class Point : Tuple<int, int>
         {
