@@ -60,9 +60,10 @@ namespace _4
                 .Select(y => $"{y}")
                 .Where(MatchingPassword)
                 .ToList();
-            var numPasswords = passwordCandidates.Count();
             var secondPasswordCandidates = passwordCandidates
                 .Where(ExactlyTwoAdjacent);
+
+            var numPasswords = passwordCandidates.Count();
             var numSecondPasswords = secondPasswordCandidates.Count();
             
             Console.WriteLine($" Advent 4 - Challenge #1 = {numPasswords}");
